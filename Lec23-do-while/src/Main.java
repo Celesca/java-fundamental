@@ -11,7 +11,7 @@ public class Main {
             System.out.println("Enter your password: ");
             inputPassword = scanner.nextLine();
         }
-        while (password.equals(inputPassword));
+        while (!password.equals(inputPassword));
         System.out.println("Hello World!");
     }
 }
