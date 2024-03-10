@@ -38,3 +38,8 @@ If somethings doesn't belong in that function. Just extract the method. Sometime
 # Static (Lecture 49)
 
 when we need to use the method in some class. If they are static method. we don't need to call from object. we can directly call static method from class.
+
+# Constructor (Lecture 50)
+
+we can create constructor with parameterized constructor or not.
+If we write many constructor with different parameters. It is called `Overloading.`
