@@ -35,4 +35,6 @@ If somethings doesn't belong in that function. Just extract the method. Sometime
 
 แทนที่เราจะเขียน If-else ยาวๆ ก็ให้ใช้ List มาวนซ้ำเอาดีกว่า
 
-# Static (Lecture
+# Static (Lecture 49)
+
+when we need to use the method in some class. If they are static method. we don't need to call from object. we can directly call static method from class.
