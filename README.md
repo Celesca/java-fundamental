@@ -3,7 +3,7 @@
 ## Question : What is refactoring code and why do we need it?
 
 Refactoring is the way to clean your code. For example, if your main class is your room and you don't clean it. It will have a chance to experience new bugs.
-When you collaborate with others. If when you come back to read. It's hard to read.
+When you collaborate with others. If when you come back to read. It's hard to read. <br>
 โค้ดสามารถดูได้เข้าใจมากขึ้น Performance มากขึ้น ไม่ใช่แค่บรรทัดลดลง
 
 ### 1. Refactoring
@@ -25,8 +25,14 @@ Change to
 
 processMode(displayMenu());
 
-### 3. Temporary with Query (แทนที่ข้อมูลด้วย Method, Query)
+### 3. Temporary with Query/Method (แทนที่ข้อมูลด้วย Method, Query)
 
 If somethings doesn't belong in that function. Just extract the method. Sometimes it has more lines in our code. But trust me it is more cleanly.
 
 ถ้าเราสอบถามคนอื่น เราจะต้องถามคนอื่น บางอย่างไม่ใช่หน้าที่มัน เราจะไม่ใส่มันลงไป ให้ Extract Method ออกมา
+
+### 4. Substitute Algorithm (แก้ไขด้วยอัลกอริทึม)
+
+แทนที่เราจะเขียน If-else ยาวๆ ก็ให้ใช้ List มาวนซ้ำเอาดีกว่า
+
+# Static (Lecture
