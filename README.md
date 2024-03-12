@@ -43,3 +43,30 @@ when we need to use the method in some class. If they are static method. we don'
 
 we can create constructor with parameterized constructor or not.
 If we write many constructor with different parameters. It is called `Overloading.`
+
+# Abstract (Lecture 56)
+
+Abstract คือ คลาสที่เป็นนามธรรม ไม่มีจริง ไม่สามารถสร้าง Object จากมันได้ มันเป็นข้อตกลงว่าสิ่งต่างๆที่สืบทอดต่อจะมีข้อตกลงอะไรบ้าง มีพฤติกรรม Attribute อะไรบ้าง
+ตัว Abstract มันจะไม่ลง Details (พฤติกรรมหรือลักษณะ) มันจะไม่มีการทำงานภายในให้ดูเลย
+
+Method อันไหนที่ Animal มันไม่มีเหมือนกัน ให้มันสืบทอดไปแล้ว Implement ของมันเอง เราจะเรียกว่า `Abstract Method` 
+เช่น public abstract void walk(); มันจะไม่บอก Behaviour (พฤติกรรม) ให้คนอื่นมาสืบทอดแล้ว Implement เอง
+
+ตัวอย่างเช่น
+
+
+public class Hippo extends Animal{
+    @Override
+    public void walk() {
+        System.out.println("I am walking");
+    }
+}
+
+จากนั้นเราจะสามารถทำงานเป็น Animal animal = new Hippo(); ได้ เพราะมีคลาสแม่เป็น Animal ดังนั้นมันสามารถทำได้ทุกอย่างของแทม่ แค่มันไป Override ตัวลูกเพิ่มขึ้นมาอีก
+
+## Interface (Lecture 58)
+Interface - ส่วนประสานต่อ เช่น ปลั๊กเต้าเสียบ ต้องมีรู้ที่ขนาดเท่ากัน หรือ การติดต่อกับระบบหนึ่งจะต้องมี Protocol เดียวกัน
+
+ความต่างจาก Abstract และ Interface คล้ายกัน Interface จะมีเพียงชื่อ Method ซึ่งจะไม่มีการ Implement Method ปกติได้เลย
+
+
