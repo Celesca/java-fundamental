@@ -5,7 +5,7 @@ public class Main {
         ArrayList<Customer> customers = new ArrayList<Customer>();
         Customer customer1 = new Customer();
         customers.add(customer1);
-        System.out.println(customers.get(0));
+        System.out.println(customers.get(0).getName());
 
     }
 }
