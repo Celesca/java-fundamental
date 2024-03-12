@@ -64,7 +64,7 @@ public class Hippo extends Animal{
 
 จากนั้นเราจะสามารถทำงานเป็น Animal animal = new Hippo(); ได้ เพราะมีคลาสแม่เป็น Animal ดังนั้นมันสามารถทำได้ทุกอย่างของแทม่ แค่มันไป Override ตัวลูกเพิ่มขึ้นมาอีก
 
-## Interface (Lecture 58)
+# Interface (Lecture 58)
 Interface - ส่วนประสานต่อ เช่น ปลั๊กเต้าเสียบ ต้องมีรู้ที่ขนาดเท่ากัน หรือ การติดต่อกับระบบหนึ่งจะต้องมี Protocol เดียวกัน
 
 ความต่างจาก Abstract และ Interface คล้ายกัน Interface จะมีเพียงชื่อ Method ซึ่งจะไม่มีการ Implement Method ปกติได้เลย
@@ -72,5 +72,22 @@ Interface - ส่วนประสานต่อ เช่น ปลั๊ก
 Interface - กำหนดรูปแบบการส่งต่อ อุปกรณ์ปลายทางเราไม่จำเป็นต้องรู้ เพราะเรามีรูเสียบปลั๊ก (Interface) เรียบร้อยแล้ว
 
 มักจะใช้บ่อยกับการเขียนกับคนอื่น ติดต่อกับคนอื่น เราสามารถนำมาใช้ได้เลย อารมณ์ประมาณ OpenAPI Specification (Swagger) นั่นเองเวลาเราทำ API Endpoints
+
+# Collection (Lecture 60)
+
+การเก็บ Object ชนิดต่างๆ ลงเป็นกลุ่มก้อน
+
+Collection ในรูปแบบ Interface / Algorithms
+
+- ArrayList (List ของข้อมูลรายการ มีลำดับ)
+- Set (เซ็ต ไม่มีลำดับ กลุ่มของข้อมูล กองรวมๆกัน)
+- Map (แผนที่ เข้าถึงข้อมูลในรูปแบบ Key-Values)
+
+โดยปกติแล้ว Array มันจำเป็นต้องกำหนดขนาดข้อมูล ดังนั้นเราจึงสร้างเป็น ArrayList เป็นแบบ Dynamic สามารถเพิ่มข้อมูลได้เรื่อยๆ
+
+Generic Collections - หมายถึง Collections ที่มีการกำหนดประเภทข้อมูลที่เราต้องการจะเก็บลงไป
+เช่น `ArrayList<String> list = new ArrayList<String>();`
+
+มันจะทำให้ข้อมูลของเราไม่ปะปนกับประเภทของข้อมูลอื่น
 
 
