@@ -7,4 +7,6 @@ public abstract class Animal {
         System.out.println("I am eating");
     }
 
+    public abstract void walk();
+
 }
